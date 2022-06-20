@@ -59,7 +59,7 @@ function scripts() {
 }
 
 function styles() {
-    return src('src/scss/style.sass')
+    return src('src/scss/style.scss')
         // .pipe(sass({outputStyle: 'compressed'})) - минификация CSS
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
